@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_test_domain_Login" items="${logins}" z="7ufEdGGB3kAEJljwIix9vICXUmk=">
+        <table:table data="${logins}" id="l_com_test_domain_Login" path="/logins" z="/TEpvBvrZGeMhhB9H0VF1G/nIZI=">
+            <table:column date="true" dateTimePattern="${login_logintime_date_format}" id="c_com_test_domain_Login_loginTime" property="loginTime" z="ULgoQX+4UrzVvG0n76aJMZjYS1w="/>
+            <table:column id="c_com_test_domain_Login_userName" property="userName" z="lZFFAZoMZrdFfngFQZSOWjEURR8="/>
+            <table:column id="c_com_test_domain_Login_attribute1" property="attribute1" z="eWJquD/+zQEstPwTfYosGxHDMJA="/>
+            <table:column id="c_com_test_domain_Login_attribute2" property="attribute2" z="XevUhDsgoSnqwxyhSC9/qS27gAI="/>
+            <table:column id="c_com_test_domain_Login_attribute3" property="attribute3" z="mSfTNAQh+ncy3phK+OzZp0j1BDw="/>
+            <table:column id="c_com_test_domain_Login_attribute4" property="attribute4" z="hRf9Vq9N1MQfACih/wN2V+KPGnc="/>
+        </table:table>
+    </page:list>
+</div>

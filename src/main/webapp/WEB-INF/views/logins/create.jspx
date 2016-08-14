@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_test_domain_Login" modelAttribute="login" path="/logins" render="${empty dependencies}" z="inigSWwAw1oiIrd50M8pwhaddMM=">
+        <field:datetime dateTimePattern="${login_logintime_date_format}" field="loginTime" id="c_com_test_domain_Login_loginTime" z="7Rvv92kBeqvqavyfVmWXYF5S5qM="/>
+        <field:input field="userName" id="c_com_test_domain_Login_userName" z="micrBVLhQ355b1Dc/epLCZC1+KA="/>
+        <field:input field="attribute1" id="c_com_test_domain_Login_attribute1" z="7aKPeP+mGFSOoskAOg4pjayg8Ho="/>
+        <field:input field="attribute2" id="c_com_test_domain_Login_attribute2" z="ZU44wOa0sHqeRACt8aDX57MlJFw="/>
+        <field:input field="attribute3" id="c_com_test_domain_Login_attribute3" z="OSZJjd5jWey2D72gCneOzNGtfD0="/>
+        <field:input field="attribute4" id="c_com_test_domain_Login_attribute4" z="8shbGabm5/a7qcITe1DRdK5SSjc="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_test_domain_Login" render="${not empty dependencies}" z="zJHNkFmKqCqt4MIz3QD1IcVGV0Y="/>
+</div>

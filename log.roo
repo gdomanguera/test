@@ -1,0 +1,36 @@
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-08-11 22:45:04
+project --topLevelPackage com.test
+jpa setup --provider HIBERNATE --database POSTGRES --databaseName data --userName postgres --password admin
+entity jpa --class ~.domain.Login --activeRecord false
+field date --fieldName login_time --type java.util.Date --persistenceType JPA_TIMESTAMP 
+// [failed] field string --fieldName user
+// [failed] field string --fieldName user --class ~.domain.Login
+field string --fieldName user --permitReservedWords 
+field string --fieldName attribute1
+field string --fieldName attribute2
+field string --fieldName attribute3
+field string --fieldName attribute4
+repository jpa --interface ~.repo.LoginRepository --entity ~.domain.Login
+service type --interface ~.service.LoginService --entity ~.domain.Login
+web mvc setup
+web mvc scaffold --class ~.controller.LoginController --backingType ~.domain.Login --path /test
+field string --fieldName user_name 
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-08-11 23:22:09
+web mvc scaffold --class ~.controller.LoginController --backingType ~.domain.Login --path /
+web mvc scaffold --class ~.controller.LoginController --backingType ~.domain.Login --path 
+web mvc scaffold --class ~.controller.LoginController --backingType ~.domain.Login
+web mvc scaffold --class ~.controller.LoginController --backingType ~.domain.Login --path /test
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-08-12 00:07:34
+web mvc json all
+web mvc json add --jsonObject ~.domain.JsonLogin --class ~.domain.Login
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-08-12 11:38:20
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-08-12 22:45:01
+// [failed] test integration --entity all
+test integration --entity ~.domain.Login
+perform tests
+security setup
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-08-13 01:09:49
+perform package
+perform eclipse
+perform tests
+logging setup --level DEBUG 

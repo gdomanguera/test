@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_test_domain_Login" object="${login}" path="/logins" z="r7Xm6JSRRemyPShcRB3xQWg9/Yc=">
+        <field:display date="true" dateTimePattern="${login_logintime_date_format}" field="loginTime" id="s_com_test_domain_Login_loginTime" object="${login}" z="RX79Ggj62FchhwPDrE1FBzGRAE8="/>
+        <field:display field="userName" id="s_com_test_domain_Login_userName" object="${login}" z="IuHpO4d3NBh7FYpXsQJGTIOgEs4="/>
+        <field:display field="attribute1" id="s_com_test_domain_Login_attribute1" object="${login}" z="MMNpn7ql5jhiwD+YomHQATFVNCE="/>
+        <field:display field="attribute2" id="s_com_test_domain_Login_attribute2" object="${login}" z="hQIR7nxWDARz7bnLhRoCUYAS1rY="/>
+        <field:display field="attribute3" id="s_com_test_domain_Login_attribute3" object="${login}" z="3pRlAGXLRFHuQ9/K6iU1gbW5BUM="/>
+        <field:display field="attribute4" id="s_com_test_domain_Login_attribute4" object="${login}" z="sUTacK+cJmm4YwlsYzMydLkj3D8="/>
+    </page:show>
+</div>
